@@ -1,0 +1,656 @@
+<html>
+
+<!-- Mirrored from holygracebschool.org/admission_form/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Oct 2020 13:22:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+<!---->
+<!--    <script src="https://use.fontawesome.com/b4793bba4a.js"></script>-->
+
+    <link href="public_html/admin_assets/admin/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="public_html/admin_assets/admin/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="public_html/admin_assets/admin/plugins/jquery/jquery-2.1.3.min.js"></script>
+    <script src="public_html/admin_assets/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- toastr pulgin -->
+    <link href="public_html/site_assets/toastr/build/toastr.min.css" rel="stylesheet">
+    <script src="public_html/site_assets/toastr/build/toastr.min.js"></script>
+
+    <!-- file upload pulgin -->
+    <script src="public_html/site_assets/plugins/vendor/jquery.ui.widget.js"></script>
+    <script src="public_html/site_assets/plugins/jquery.iframe-transport.js"></script>
+    <script src="public_html/site_assets/plugins/jquery.fileupload.js"></script>
+    <style>
+        #input2 {border-style: none none solid none}
+        #inputnone{border-style: none }
+
+        .toast-message p{ color:#fff !important; }
+        .myProgress { width: 100%; background-color: #ddd;margin-top:20px }
+        .myBar { width: 1%; height: 11px; background-color: #4CAF50; }
+.for_h4
+{
+	background:#0a819c;
+    padding: 9px;
+    color: #fff;
+    margin-top: 2%;
+}
+.text-right
+{
+text-align:right !important;
+}
+.pb15
+{
+	padding-bottom: 15px;
+}
+label{
+	font-weight:normal;
+}
+
+    </style>
+</head>
+<body style="background: #f0f2f3;">
+
+<div style="margin: 3%;padding: 30px; background: #fff;box-shadow: 0px 0px 8px 5px #ccc;">
+   <img src="public_html/site_assets/img/logo.png">
+    <br>
+	<div>
+<p>Holy Grace Academy Of Management Studies approved by the all India Council For Technical Education (AICTE)
+, New Delhi and affliated to Calicut University.</p>
+	</div>
+	
+	<!---------------------------------------------------------------------------->
+	<h4 class="for_h4">REGISTRATION FORM</h4>
+	
+	
+    <form method="post" action="http://holygracebschool.org/admission_form/Site_ctrl/form_data">
+ <div class="col-md-12">
+      <div class="col-md-6">
+	  <label>Name Of The Student</label>
+      <input type="text" name="data_2" placeholder="" style="padding: 5px;width: 100%" >
+      
+       <label style="display:block; margin-top:15px;">Gender</label>
+              
+                    <input type="radio" name="data_3" value="Male"  >Male
+                    <input type="radio" name="data_3" value="Female">Female
+                    <input type="radio" name="data_3" value="Others">Others
+                    <div style="clear:both; margin-bottom:15px"></div>
+      
+         <label style="margin-top:5px">Date of Birth</label>
+         <input id="inputnone" type="date" name="data_4" style="width: 100%;height: 34px;border: 1px solid #a9a9a9;" >
+         
+         
+                      <label style="padding-top:15px">Age </label>
+               <input type="text" name="data_5" style="padding: 5px;width: 100%" >
+         
+          <label style=" margin-top:15px;">Mobile No.</label>
+                <td  colspan="5"><input type="text" name="data_11" style="padding: 5px;width: 100%" >
+                
+                   <label style=" margin-top:15px;">Whatsapp No.</label>
+                <td colspan="5"><input type="text" name="data_12" style="padding: 5px;width: 100%" >
+                
+                
+                 <label style=" margin-top:15px;">Email</label>
+                <td colspan="5"><input type="email" name="data_24" style="padding: 5px;width: 100%" >
+         
+           <label style=" margin-top:15px;">Permanent Address</label>
+                <td  colspan="5"><textarea cols="6" name="data_9" style="padding: 5px;width: 100%" ></textarea>
+         
+           <label style=" margin-top:15px;">Address for Communication</label>
+                <td  colspan="5"><textarea cols="6" name="data_10" style="padding: 5px;width: 100%" 
+                ></textarea>
+                
+                  <label style=" margin-top:15px;">Aadhar No </label>
+               <input type="text" name="aadhar" style="padding: 5px;width: 100%" >
+               
+          <label style=" margin-top:15px;">Religion & Community</label>
+         <input type="text" name="data_8" style="padding: 5px;width: 100%" >       
+                
+            <label style=" margin-top:15px;">Name of Father</label>
+              <input type="text" name="data_6" style="padding: 5px;width: 100%" >
+               
+                <label style=" margin-top:15px;">Name of Mother</label>
+               <input type="text" name="data_7" style="padding: 5px;width: 100%" >
+                <label style=" margin-top:15px;">Contact No. (Parent/ Guardian)</label>
+               <input type="text" name="parent_phone" style="padding: 5px;width: 100%" >
+
+                <label style=" margin-top:15px;">Name Of Qualifying Examination  </label>
+               <input type="text" name="qualify_exam" style="padding: 5px;width: 100%" >
+                 
+               <!--     <label>Admission Date</label>-->
+               <!--<input id="inputnone" type="date" name="admission_date" style="width: 100%;height: 34px;border: 1px solid #a9a9a9;" >-->
+               
+              
+              
+              <!--<label>Occupation  (Parent/ Guardian)</label>-->
+              <!-- <input type="text" name="parent_occupation" style="padding: 5px;width: 100%" >-->
+               
+               
+            
+	 
+                    
+               
+               
+               
+              
+                
+               
+              
+              
+               
+               
+              
+                
+               
+               
+                <label style=" margin-top:15px;">Name Of Institution Last Studied  </label>
+               <input type="text" name="studied_institution" style="padding: 5px;width: 100%" >
+              
+               
+                
+                
+                <!--  <label>Admission for the Year</label>-->
+                <!--<td colspan="5"><input type="text" name="data_13" style="padding: 5px;width: 100%" >-->
+                  
+               
+               
+	  </div>
+	
+     
+            <div class=" col-md-3 col-md-offset-2">
+<img src="public_html/site_assets/img/profile.png"/>
+                    <input type="file" class="custom-file fileupload text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename1" readonly="" name="pdf_file" >
+                    <p>Maximum image size is 100Kb</p>
+                    <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop"> </div>
+                </div>
+		   
+            
+         
+		   
+		   <div class="col-md-4  pb15">
+           </div>
+		   
+		   
+		   <div class="col-md-4  pb15">
+           </div>
+		   
+		    
+		   <!----------------------------------------------------------------------->
+		     <div class="col-md-4  pb15">
+               
+           </div>
+		   <div class="col-md-4  pb15">
+              
+           </div>
+		   </div>
+		  
+         <div class="col-md-12">  
+         
+        <!--<div class="col-md-4  pb15">
+            <label>Course</label>
+              
+			   <select name="data_14"  style="padding: 5px;width: 100%;height:34px">
+			   <option value="BPharm">B.Pharm</option>
+			   <option value="DPharm">D.Pharm</option>
+			   </select>
+           </div>-->
+           <div class="col-md-4  pb15">
+              
+           </div>
+
+           <div class="col-md-4  pb15">
+               
+           </div>
+           
+           
+           </div>
+		   <div style="clear:both"></div>
+		   
+           <!-- <h4 class="for_h4">CHALLAN DETAILS</h4>
+			<div class="col-md-12">  
+           <div class="col-md-3  pb15">
+                <label>
+                    Application Fee Amount</label>
+                <input type="text" id="inputnone" name="data_19" placeholder="" style="padding: 5px;width: 100%;height: :100%;border: 1px solid #a9a9a9;" required>
+               
+
+          </div>
+		   
+           <div class="col-md-3  pb15">
+                <label>DD No</label>
+                <input type="text" name="data_21" placeholder="" style="padding: 5px;width: 100%;height: :100%" required>
+				</div>
+				 <div class="col-md-3  pb15">
+                <label>Date</label>
+                <input type="date" name="data_22"   style="width: 100%;height: 34px;border: 1px solid #a9a9a9;" required>
+				</div>
+				 <div class="col-md-3  pb15">
+                <label>Bank</label>
+                <input type="text" name="data_23" placeholder="" style="padding: 5px;width: 100%;height: :100%" required>
+           </div>
+
+</div>-->
+<div style="clear:both"></div>
+		   
+            <h4 class="for_h4">UPLOAD CERTIFICATES</h4>
+			
+			
+			<ul>
+			<li>The uploaded document should be in PDF format & clear enough to read</li>
+		<!--	<li>The file size must not exceed 300 KB</li>-->
+			
+			</ul><br/><br/>
+			
+			
+			<div class="col-md-12">  
+			
+			<!--school receipt used as sslc -->
+			 <div class="col-md-3  pb15"  style="min-height:115px">
+                <label>SSLC Certificate</label>
+                <input type="file" class="custom-file fileupload6 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename7" readonly="" name="school_receipt" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g6_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name6" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop6"> </div>
+				</div>
+				
+           <div class="col-md-3  pb15" style="min-height:115px">
+                <label>
+                    +2 Certificate</label>
+                 <input type="file" class="custom-file fileupload1 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename2" readonly="" name="rel_certi" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g1_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name1" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop1"> </div>
+
+           </div>
+		   
+          
+			<!--	 <div class="col-md-3  pb15" style="min-height:115px">
+                <label>Sponsorship Certificate</label>
+                <input type="file" class="custom-file fileupload3 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename4" readonly="" name="spo_certi" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g3_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name3" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop3"> </div>
+           </div>
+ <div class="col-md-3  pb15" style="min-height:115px">
+                <label>Citizenship Certificate of the Sponsor</label>
+               <input type="file" class="custom-file fileupload4 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename5" readonly="" name="cit_certi" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g4_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name4" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop4"> </div>
+           </div>-->
+         	<!--Pass Certificate used as Degree Certificate -->
+				 <div class="col-md-3  pb15"  style="min-height:115px">
+                <label>Degree Certificate</label>
+                <input type="file" class="custom-file fileupload5 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename6" readonly="" name="pas_certi" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g5_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name5" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop5"> </div>
+				</div>
+				
+				
+				 <div class="col-md-3  pb15" style="min-height:115px">
+                <label>Upload Signature (Image)</label>
+               <input type="file" class="custom-file fileupload2 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename3" readonly="" name="emp_certi" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g2_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name2" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop2"> </div>
+				</div>
+				
+				
+				
+</div>
+<div style="clear:both"></div>
+		 <h4 class="for_h4">DECLARATION</h4>
+		 <p>I declare that the details here i submitted was original. I have read and understood all provisions of admission and agree to abide by them. </p>
+
+        <div style="margin-top: 20px; margin-left:30px"><input type="submit"  value="Submit" class="btn btn-success"> </div>
+
+
+    </form>
+</div>
+<script type="text/javascript">
+    tos_success 	= '';
+    tos_error 		= '';
+    tos_warning 	= '';
+    if(tos_success!=''){
+        toastr.success(''+tos_success+'', '')
+    }
+
+    if(tos_error!=''){
+        toastr.error(''+tos_error+'', '')
+    }
+
+    if(tos_warning!=''){
+        toastr.warning(''+tos_warning+'', '')
+    }
+</script>
+
+<script type="text/javascript">
+    var up_status = '';
+
+    $(document).ready(function(){
+        $('.fileupload').fileupload({
+            url: "http://holygracebschool.org/admission_form/site_ctrl/upload_doc_file",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename1').html('');
+                    $('.filename1').val(data.result.file);
+                    $('.img_name').html('');
+                    $('.img_name').append(' UploadingCompleted...');
+                    $('.pro_id_shop').html('');
+                    move('prog_bar_g_id_1','pro_id_shop');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name').html('');
+                        $('.img_name').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name').html('');
+                        $('.img_name').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name').html('');
+                    $('.img_name').append('Try again!..');
+                }
+                $('.pro_id_shop').html('');
+            }
+        });
+    });
+
+	
+	$(document).ready(function(){
+        $('.fileupload1').fileupload({
+            url: "http://holygracebschool.org/admission_form/site_ctrl/upload_rel_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop1').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop1').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename2').html('');
+                    $('.filename2').val(data.result.file);
+                    $('.img_name1').html('');
+                    $('.img_name1').append(' UploadingCompleted...');
+                    $('.pro_id_shop1').html('');
+                    move('prog_bar_g1_id_1','pro_id_shop1');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name1').html('');
+                        $('.img_name1').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name1').html('');
+                        $('.img_name1').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name1').html('');
+                    $('.img_name1').append('Try again!..');
+                }
+                $('.pro_id_shop1').html('');
+            }
+        });
+    });
+	
+	$(document).ready(function(){
+        $('.fileupload2').fileupload({
+            url: "http://holygracebschool.org/admission_form/site_ctrl/upload_emp_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop2').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop2').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename3').html('');
+                    $('.filename3').val(data.result.file);
+                    $('.img_name2').html('');
+                    $('.img_name2').append(' UploadingCompleted...');
+                    $('.pro_id_shop2').html('');
+                    move('prog_bar_g2_id_1','pro_id_shop2');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name2').html('');
+                        $('.img_name2').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name2').html('');
+                        $('.img_name2').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name2').html('');
+                    $('.img_name2').append('Try again!..');
+                }
+                $('.pro_id_shop2').html('');
+            }
+        });
+    });
+	
+	
+	$(document).ready(function(){
+        $('.fileupload3').fileupload({
+            url: "http://holygracebschool.org/admission_form/site_ctrl/upload_spo_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop3').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop3').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename4').html('');
+                    $('.filename4').val(data.result.file);
+                    $('.img_name3').html('');
+                    $('.img_name3').append(' UploadingCompleted...');
+                    $('.pro_id_shop3').html('');
+                    move('prog_bar_g3_id_1','pro_id_shop3');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name3').html('');
+                        $('.img_name3').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name3').html('');
+                        $('.img_name3').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name3').html('');
+                    $('.img_name3').append('Try again!..');
+                }
+                $('.pro_id_shop3').html('');
+            }
+        });
+    });
+	
+$(document).ready(function(){
+        $('.fileupload4').fileupload({
+            url: "http://holygracebschool.org/admission_form/site_ctrl/upload_cit_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop4').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop4').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename5').html('');
+                    $('.filename5').val(data.result.file);
+                    $('.img_name4').html('');
+                    $('.img_name4').append(' UploadingCompleted...');
+                    $('.pro_id_shop4').html('');
+                    move('prog_bar_g4_id_1','pro_id_shop4');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name4').html('');
+                        $('.img_name4').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name4').html('');
+                        $('.img_name4').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name4').html('');
+                    $('.img_name4').append('Try again!..');
+                }
+                $('.pro_id_shop4').html('');
+            }
+        });
+    });
+	
+	$(document).ready(function(){
+        $('.fileupload5').fileupload({
+            url: "http://holygracebschool.org/admission_form/site_ctrl/upload_pas_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop5').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop5').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename6').html('');
+                    $('.filename6').val(data.result.file);
+                    $('.img_name5').html('');
+                    $('.img_name5').append(' UploadingCompleted...');
+                    $('.pro_id_shop5').html('');
+                    move('prog_bar_g5_id_1','pro_id_shop5');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name5').html('');
+                        $('.img_name5').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name5').html('');
+                        $('.img_name5').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name5').html('');
+                    $('.img_name5').append('Try again!..');
+                }
+                $('.pro_id_shop5').html('');
+            }
+        });
+    });
+	
+	$(document).ready(function(){
+        $('.fileupload6').fileupload({
+            url: "http://holygracebschool.org/admission_form/site_ctrl/upload_school_receipt",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop6').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop6').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename7').html('');
+                    $('.filename7').val(data.result.file);
+                    $('.img_name6').html('');
+                    $('.img_name6').append(' UploadingCompleted...');
+                    $('.pro_id_shop6').html('');
+                    move('prog_bar_g6_id_1','pro_id_shop6');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name6').html('');
+                        $('.img_name6').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name6').html('');
+                        $('.img_name6').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name6').html('');
+                    $('.img_name6').append('Try again!..');
+                }
+                $('.pro_id_shop6').html('');
+            }
+        });
+    });
+    function move(id,p_id) {
+        //if(up_status=='true'){
+        $('#'+id+'').css('display','block');
+        var elem = document.getElementById(''+id+'');
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                $('#'+p_id+'').text('');
+                $('#'+p_id+'').text(width+'%');
+            }
+        }
+        //}
+    }
+	
+</script>
+
+</body>
+
+<!-- Mirrored from holygracebschool.org/admission_form/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Oct 2020 13:22:55 GMT -->
+</html>
